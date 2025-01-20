@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../images/blind-sight-3440x1440.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f8f9fa;
+    font-family: 'Roboto', sans-serif; /* Használj modern betűtípust */
+    min-height: 100vh; /* Győződj meg róla, hogy a teljes képernyőt lefedi */
+}
+
+.glassMorphism {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#task_bg_position {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    text-shadow:  0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.fade {
+    z-index: -1;
+}
+
+.modal{
+    z-index: 1;
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.9);
+    color: #6c757d;
+}
+
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table thead {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #3c4045;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #2d3136;
+}
