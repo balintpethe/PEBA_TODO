@@ -11,7 +11,7 @@ class TaskController
 
     public function handleRequest() {
         if (!isset($_SESSION['user_id'])) {
-            header("Location: ../views/login.php");
+            header("Location: ../public/login");
             exit;
         }
 
@@ -74,8 +74,6 @@ class TaskController
 
     public function listAllTasks()
     {
-        $taskModel = new TaskModel($this->pdo);
-        $tasks = $taskModel->getAllTasks();
         header("Location: ../public/admin");
         exit;
     }

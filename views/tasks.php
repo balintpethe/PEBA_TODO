@@ -34,7 +34,7 @@
                     </div>
                     <div class="d-inline-flex align-items-center">
                         <a href="" class="btn btn-warning btn-sm" data-bs-toggle="modal"
-                           data-bs-target="#staticBackdrop"><i class="bi bi-card-text"></i></a>
+                           data-bs-target="#staticBackdrop"><i class="bi bi-pencil-square"></i></a>
                         <a href="../public/tasks?action=delete&id=<?= $task['id'] ?>"
                            class="btn btn-danger btn-sm ms-3"><i class="bi bi-x-lg"></i></a>
                     </div>
@@ -45,14 +45,14 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header border-bottom-0">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Edit</h1>
+                            <h5 class="modal-title" id="staticBackdropLabel">Edit</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action="../public/index.php?action=updatetask&id=<?= $task['id'] ?>" method="POST">
                             <div class="modal-body">
                                 <input type="hidden" name="id" value="<?= $task['id'] ?>">
                                 <input type="text" name="title" class="form-control"
-                                       placeholder="<?= htmlspecialchars($task['title']) ?>" required>
+                                       value="<?= htmlspecialchars($task['title']) ?>" required>
                             </div>
                             <div class="modal-footer border-top-0">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

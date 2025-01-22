@@ -56,7 +56,7 @@
                             <div class="modal-content">
                                 <form action="../public/index.php?action=updateUser&id=<?= $user['id'] ?>"
                                       method="POST">
-                                    <div class="modal-header">
+                                    <div class="modal-header border-bottom-0">
                                         <h5 class="modal-title">Edit User</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
@@ -64,7 +64,7 @@
                                     <div class="modal-body">
                                         <input type="hidden" name="id" value="<?= $user['id'] ?>">
                                         <input type="text" name="username" class="form-control mb-2"
-                                               placeholder="<?= htmlspecialchars($user['username']) ?>">
+                                               value="<?= htmlspecialchars($user['username']) ?>">
                                         <select name="role" class="form-control mb-2">
                                             <option value="user" <?= $user['role'] == 'user' ? 'selected' : '' ?>>User
                                             </option>
@@ -75,7 +75,7 @@
                                         <input type="password" name="password" class="form-control mb-2"
                                                placeholder="New Password (leave blank to keep current)">
                                     </div>
-                                    <div class="modal-footer">
+                                    <div class="modal-footer border-top-0">
                                         <button type="submit" class="btn btn-primary">Save Changes</button>
                                     </div>
                                 </form>
@@ -120,7 +120,7 @@
                             <div class="modal-content">
                                 <form action="../public/index.php?action=updatetask&id=<?= $task['id'] ?>&redirect=../public/admin"
                                       method="POST">
-                                    <div class="modal-header">
+                                    <div class="modal-header border-bottom-0">
                                         <h5 class="modal-title">Edit Task</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
@@ -130,7 +130,7 @@
                                         <input type="text" name="title" class="form-control"
                                                value="<?= htmlspecialchars($task['title']) ?>" required>
                                     </div>
-                                    <div class="modal-footer">
+                                    <div class="modal-footer border-top-0">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                         </button>
                                         <button type="submit" class="btn btn-primary">Apply</button>
